@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manutenção de Curso</title>
+
+	<!-- Incluindo o CSS e JS do Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<form method="post" action="manter_curso.do">
+
+	<fieldset>
+	
+	<div class="container">
+				<div class="container">
+					<div class="pull-center">
+						<h1> <span class="label label-primary">Manutenção de Cursos</span> </h1>
+					</div>
+				</div>
+	</div>
+	
+	<div class="col-sm-10">
+		<p><p><input type="text" name="codigo" size="50" class="form-control" placeholder="Codigo"  >
+	</div>
+	
+	<div class="col-sm-10">
+		<p><p><input type="text" name="desc" size="50" class="form-control" placeholder="Descrição"  >
+	</div>
+	
+	<div class="col-sm-10">
+	<p><p><input type="text" name="dtIni" size="50" class="form-control" placeholder="Data Início"  >
+	</div>
+	
+	<div class="col-sm-10">
+		<p><p><input type="text" name="dtFim" size="50" class="form-control" placeholder="Data Final"  >
+	</div>
+	
+	<div class="col-sm-10">
+		<p><p><input type="text" name="hora" size="50" class="form-control" placeholder="Hora"  >
+	</div>
+		  
+	<div class="col-sm-10">
+		<p><p><input type="text" name="numVagas" size="50" class="form-control" placeholder="Numero de Vagas"  >
+	</div>
+
+	<div class="col-sm-10">
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label class="sr-only" for="exampleInputAmount">Valor</label>
+		    <div class="input-group">
+		      <div class="input-group-addon">R$</div>
+		      <input type="number" class="form-control" name="valor" placeholder="Valor">
+		      <div class="input-group-addon">.00</div>
+		    </div>
+		  </div>
+		</form>
+	</div>	
+	
+	<div class="col-sm-10">	
+	
+	<select class="form-control" name="area">
+  		<option>Informatica</option>
+  		<option>Artes</option>
+	</select>
+	</div>
+
+		<div class="col-sm-10" align="right" >
+			<input type="submit"  class="btn btn-primary btn-lg" name="acao" value="Inserir">
+			<input type="submit"  class="btn btn-primary btn-lg" name="acao" value="Alterar"> 
+			<input type="submit"  class="btn btn-primary btn-lg" name="acao" value="Carregar"> 
+			<input type="submit"  class="btn btn-primary btn-lg" name="acao" value="Excluir">
+			<input type="submit"  class="btn btn-primary btn-lg" name="acao" value="Consultar Todos">
+		</div>
+	
+	</fieldset>
+	
+	</form>
+
+</body>
+</html>
